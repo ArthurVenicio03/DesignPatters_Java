@@ -1,5 +1,6 @@
 package com.github.Arthurvenicio03;
 
+import com.github.Arthurvenicio03.Facade.facade;
 import com.github.Arthurvenicio03.Singleton.SingletonEager;
 import com.github.Arthurvenicio03.Singleton.singletonLazy;
 import com.github.Arthurvenicio03.Singleton.singletonLazyHolder;
@@ -51,5 +52,11 @@ public class Test {
         robo.setComportamento(Agressivo);
         robo.mover();
         robo.mover();
+        System.out.println(" ");
+        //FACADE
+        System.out.println("FACADE_____________");
+     
+        facade facade = new facade();
+        facade.migrarCliente("Venilton", "57030-532");
     }
 }
